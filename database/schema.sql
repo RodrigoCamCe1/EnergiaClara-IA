@@ -63,7 +63,7 @@ VALUES (
     uuid_generate_v4(),
     '11111111-1111-1111-1111-111111111111',
     'admin@demo.edu',
-    '$2a$10$7QJ7gQ1234567890ABCDEFGHIJKLMNOPQRSTUVWXYZabcde',  -- REEMPLAZAR con hash real
+    '$2a$10$kdFT40lwlms9N5VJiQ7ES.4a2it/uhBEGlZco19apZw3Y/3CIgmQW',
     true,
     NOW()
 );

@@ -17,6 +17,7 @@ import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.Map;
+import com.energiaclara.api.rest.audit.Audited;
 
 @RestController
 @RequestMapping("/api/auth")
@@ -31,6 +32,7 @@ public class AuthController {
     }
 
     @PostMapping("/login")
+    @Audited(action = "LOGIN", entity = "User")
     public ResponseEntity<LoginResponse> login(@Valid @RequestBody LoginRequest request) {
         LoginCommand command = new LoginCommand(
                 Email.of(request.email()),
@@ -45,6 +47,7 @@ public class AuthController {
 
     @PostMapping("/register")
     @PreAuthorize("hasRole('ADMIN_INSTITUCION')")
+    @Audited(action = "REGISTER_USER", entity = "User", entityIdExpression = "#result.body['userId']")
     public ResponseEntity<Map<String, String>> register(@Valid @RequestBody RegisterRequest request) {
         RegisterUserCommand command = new RegisterUserCommand(
                 TenantId.of(request.tenantId()),
