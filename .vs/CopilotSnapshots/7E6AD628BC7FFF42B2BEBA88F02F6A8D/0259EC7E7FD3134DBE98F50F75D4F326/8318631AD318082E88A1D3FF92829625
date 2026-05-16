@@ -1,0 +1,102 @@
+﻿package com.energiaclara.energyops.domain.model;
+
+import com.energiaclara.energyops.domain.AnomalyType;
+import com.energiaclara.energyops.domain.event.DomainEvent;
+import com.energiaclara.energyops.domain.vo.AnomalyScope;
+import com.energiaclara.energyops.domain.vo.DeviationPercent;
+import com.energiaclara.energyops.domain.vo.ImpactEstimate;
+import org.junit.jupiter.api.Test;
+
+import java.math.BigDecimal;
+import java.util.List;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertThrows;
+
+class AnomalyTest {
+
+    @Test
+    void detectProducesEventInPullDomainEvents() {
+        Anomaly anomaly = Anomaly.detect(
+                AnomalyScope.of("FAC-1", "MTR-1"),
+                AnomalyType.EXCESS_CONSUMPTION,
+                new DeviationPercent(BigDecimal.valueOf(80)),
+                new ImpactEstimate(BigDecimal.TEN, BigDecimal.ONE),
+                "Exp",
+                "Rec"
+        );
+
+        List<DomainEvent> events = anomaly.pullDomainEvents();
+
+        assertEquals(1, events.size());
+    }
+
+    @Test
+    void pullDomainEventsSecondCallReturnsEmptyList() {
+        Anomaly anomaly = Anomaly.detect(
+                AnomalyScope.of("FAC-1", "MTR-1"),
+                AnomalyType.EXCESS_CONSUMPTION,
+                new DeviationPercent(BigDecimal.valueOf(80)),
+                new ImpactEstimate(BigDecimal.TEN, BigDecimal.ONE),
+                "Exp",
+                "Rec"
+        );
+        anomaly.pullDomainEvents();
+
+        List<DomainEvent> events = anomaly.pullDomainEvents();
+
+        assertEquals(0, events.size());
+    }
+
+    @Test
+    void resolverWithoutInActionThrows() {
+        Anomaly anomaly = Anomaly.detect(
+                AnomalyScope.of("FAC-1", "MTR-1"),
+                AnomalyType.EXCESS_CONSUMPTION,
+                new DeviationPercent(BigDecimal.valueOf(80)),
+                new ImpactEstimate(BigDecimal.TEN, BigDecimal.ONE),
+                "Exp",
+                "Rec"
+        );
+
+        assertThrows(IllegalStateException.class, () -> anomaly.resolver("Ok"));
+    }
+
+    @Test
+    void ignorarInResolvedThrows() {
+        Anomaly anomaly = Anomaly.reconstruct(
+                AnomalyId.generate(),
+                AnomalyScope.of("FAC-1", "MTR-1"),
+                AnomalyType.EXCESS_CONSUMPTION,
+                new com.energiaclara.energyops.domain.vo.SeverityLevel(com.energiaclara.energyops.domain.AnomalySeverity.HIGH),
+                new DeviationPercent(BigDecimal.valueOf(80)),
+                new ImpactEstimate(BigDecimal.TEN, BigDecimal.ONE),
+                "Exp",
+                "Rec",
+                AnomalyStatus.RESOLVED,
+                java.time.Instant.now()
+        );
+
+        assertThrows(IllegalStateException.class, anomaly::ignorar);
+    }
+
+    @Test
+    void stateMachineDetectedToResolvedProducesResolvedEvent() {
+        Anomaly anomaly = Anomaly.detect(
+                AnomalyScope.of("FAC-1", "MTR-1"),
+                AnomalyType.EXCESS_CONSUMPTION,
+                new DeviationPercent(BigDecimal.valueOf(80)),
+                new ImpactEstimate(BigDecimal.TEN, BigDecimal.ONE),
+                "Exp",
+                "Rec"
+        );
+
+        anomaly.notificar();
+        anomaly.iniciarAccion();
+        anomaly.resolver("Ok");
+
+        List<DomainEvent> events = anomaly.pullDomainEvents();
+
+        assertEquals(1, events.stream().filter(event -> event.eventType().equals("energyops.anomaly.resolved")).count());
+    }
+}

@@ -1,0 +1,16 @@
+package com.energiaclara.energyops.domain.event;
+
+import com.energiaclara.energyops.domain.model.AnomalyId;
+
+import java.time.Instant;
+
+public record AnomalyResolvedEvent(
+        AnomalyId anomalyId,
+        String resolutionNote,
+        Instant occurredOn
+) implements DomainEvent {
+    @Override
+    public String eventType() {
+        return "energyops.anomaly.resolved";
+    }
+}

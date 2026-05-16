@@ -1,0 +1,622 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Lenovo\\OneDrive - Fundaci\u00F3n Estudiantes UPSA\\Programacion web\\CarpetadepruebaEnergiaClaraIA\\EnergiaClara-IA-main\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Lenovo\\OneDrive - Fundaci\u00F3n Estudiantes UPSA\\Programacion web\\CarpetadepruebaEnergiaClaraIA\\EnergiaClara-IA-main\\database\\schema.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:database\\schema.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Lenovo\\OneDrive - Fundaci\u00F3n Estudiantes UPSA\\Programacion web\\CarpetadepruebaEnergiaClaraIA\\EnergiaClara-IA-main\\database\\energyops-sqlserver.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:database\\energyops-sqlserver.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Lenovo\\OneDrive - Fundaci\u00F3n Estudiantes UPSA\\Programacion web\\CarpetadepruebaEnergiaClaraIA\\EnergiaClara-IA-main\\frontend\\package.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:frontend\\package.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Lenovo\\OneDrive - Fundaci\u00F3n Estudiantes UPSA\\Programacion web\\CarpetadepruebaEnergiaClaraIA\\EnergiaClara-IA-main\\frontend\\src\\pages\\LoginPage.jsx||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:frontend\\src\\pages\\LoginPage.jsx||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Lenovo\\OneDrive - Fundaci\u00F3n Estudiantes UPSA\\Programacion web\\CarpetadepruebaEnergiaClaraIA\\EnergiaClara-IA-main\\backend\\src\\test\\java\\com\\energiaclara\\energyops\\domain\\vo\\SeverityLevelTest.java||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:backend\\src\\test\\java\\com\\energiaclara\\energyops\\domain\\vo\\SeverityLevelTest.java||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Lenovo\\OneDrive - Fundaci\u00F3n Estudiantes UPSA\\Programacion web\\CarpetadepruebaEnergiaClaraIA\\EnergiaClara-IA-main\\backend\\src\\test\\java\\com\\energiaclara\\energyops\\domain\\vo\\DeviationPercentTest.java||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:backend\\src\\test\\java\\com\\energiaclara\\energyops\\domain\\vo\\DeviationPercentTest.java||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Lenovo\\OneDrive - Fundaci\u00F3n Estudiantes UPSA\\Programacion web\\CarpetadepruebaEnergiaClaraIA\\EnergiaClara-IA-main\\backend\\src\\test\\java\\com\\energiaclara\\energyops\\domain\\service\\AnomalyDetectionDomainServiceTest.java||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:backend\\src\\test\\java\\com\\energiaclara\\energyops\\domain\\service\\AnomalyDetectionDomainServiceTest.java||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Lenovo\\OneDrive - Fundaci\u00F3n Estudiantes UPSA\\Programacion web\\CarpetadepruebaEnergiaClaraIA\\EnergiaClara-IA-main\\backend\\src\\main\\java\\com\\energiaclara\\domain\\model\\User.java||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:backend\\src\\main\\java\\com\\energiaclara\\domain\\model\\User.java||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Lenovo\\OneDrive - Fundaci\u00F3n Estudiantes UPSA\\Programacion web\\CarpetadepruebaEnergiaClaraIA\\EnergiaClara-IA-main\\backend\\src\\main\\java\\com\\energiaclara\\domain\\model\\Role.java||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:backend\\src\\main\\java\\com\\energiaclara\\domain\\model\\Role.java||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Lenovo\\OneDrive - Fundaci\u00F3n Estudiantes UPSA\\Programacion web\\CarpetadepruebaEnergiaClaraIA\\EnergiaClara-IA-main\\backend\\src\\main\\java\\com\\energiaclara\\energyops\\domain\\vo\\EnergyValue.java||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:backend\\src\\main\\java\\com\\energiaclara\\energyops\\domain\\vo\\EnergyValue.java||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Lenovo\\OneDrive - Fundaci\u00F3n Estudiantes UPSA\\Programacion web\\CarpetadepruebaEnergiaClaraIA\\EnergiaClara-IA-main\\backend\\src\\main\\java\\com\\energiaclara\\energyops\\domain\\vo\\DeviationPercent.java||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:backend\\src\\main\\java\\com\\energiaclara\\energyops\\domain\\vo\\DeviationPercent.java||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Lenovo\\OneDrive - Fundaci\u00F3n Estudiantes UPSA\\Programacion web\\CarpetadepruebaEnergiaClaraIA\\EnergiaClara-IA-main\\backend\\src\\main\\java\\com\\energiaclara\\energyops\\domain\\vo\\SeverityLevel.java||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:backend\\src\\main\\java\\com\\energiaclara\\energyops\\domain\\vo\\SeverityLevel.java||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Lenovo\\OneDrive - Fundaci\u00F3n Estudiantes UPSA\\Programacion web\\CarpetadepruebaEnergiaClaraIA\\EnergiaClara-IA-main\\backend\\src\\main\\java\\com\\energiaclara\\energyops\\domain\\vo\\ImpactEstimate.java||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:backend\\src\\main\\java\\com\\energiaclara\\energyops\\domain\\vo\\ImpactEstimate.java||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Lenovo\\OneDrive - Fundaci\u00F3n Estudiantes UPSA\\Programacion web\\CarpetadepruebaEnergiaClaraIA\\EnergiaClara-IA-main\\backend\\src\\main\\java\\com\\energiaclara\\energyops\\domain\\vo\\AnomalyScope.java||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:backend\\src\\main\\java\\com\\energiaclara\\energyops\\domain\\vo\\AnomalyScope.java||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Lenovo\\OneDrive - Fundaci\u00F3n Estudiantes UPSA\\Programacion web\\CarpetadepruebaEnergiaClaraIA\\EnergiaClara-IA-main\\backend\\src\\main\\java\\com\\energiaclara\\energyops\\domain\\model\\AnomalyId.java||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:backend\\src\\main\\java\\com\\energiaclara\\energyops\\domain\\model\\AnomalyId.java||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Lenovo\\OneDrive - Fundaci\u00F3n Estudiantes UPSA\\Programacion web\\CarpetadepruebaEnergiaClaraIA\\EnergiaClara-IA-main\\backend\\src\\main\\java\\com\\energiaclara\\energyops\\domain\\model\\AnomalyStatus.java||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:backend\\src\\main\\java\\com\\energiaclara\\energyops\\domain\\model\\AnomalyStatus.java||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Lenovo\\OneDrive - Fundaci\u00F3n Estudiantes UPSA\\Programacion web\\CarpetadepruebaEnergiaClaraIA\\EnergiaClara-IA-main\\backend\\src\\main\\java\\com\\energiaclara\\energyops\\domain\\event\\DomainEvent.java||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:backend\\src\\main\\java\\com\\energiaclara\\energyops\\domain\\event\\DomainEvent.java||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Lenovo\\OneDrive - Fundaci\u00F3n Estudiantes UPSA\\Programacion web\\CarpetadepruebaEnergiaClaraIA\\EnergiaClara-IA-main\\backend\\src\\main\\java\\com\\energiaclara\\energyops\\domain\\event\\AnomalyDetectedEvent.java||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:backend\\src\\main\\java\\com\\energiaclara\\energyops\\domain\\event\\AnomalyDetectedEvent.java||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Lenovo\\OneDrive - Fundaci\u00F3n Estudiantes UPSA\\Programacion web\\CarpetadepruebaEnergiaClaraIA\\EnergiaClara-IA-main\\backend\\src\\main\\java\\com\\energiaclara\\energyops\\domain\\event\\AnomalyResolvedEvent.java||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:backend\\src\\main\\java\\com\\energiaclara\\energyops\\domain\\event\\AnomalyResolvedEvent.java||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Lenovo\\OneDrive - Fundaci\u00F3n Estudiantes UPSA\\Programacion web\\CarpetadepruebaEnergiaClaraIA\\EnergiaClara-IA-main\\backend\\src\\main\\java\\com\\energiaclara\\energyops\\domain\\model\\Anomaly.java||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:backend\\src\\main\\java\\com\\energiaclara\\energyops\\domain\\model\\Anomaly.java||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Lenovo\\OneDrive - Fundaci\u00F3n Estudiantes UPSA\\Programacion web\\CarpetadepruebaEnergiaClaraIA\\EnergiaClara-IA-main\\backend\\src\\main\\java\\com\\energiaclara\\energyops\\domain\\port\\out\\AnomalyRepositoryPort.java||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:backend\\src\\main\\java\\com\\energiaclara\\energyops\\domain\\port\\out\\AnomalyRepositoryPort.java||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Lenovo\\OneDrive - Fundaci\u00F3n Estudiantes UPSA\\Programacion web\\CarpetadepruebaEnergiaClaraIA\\EnergiaClara-IA-main\\backend\\src\\main\\java\\com\\energiaclara\\energyops\\domain\\port\\out\\DomainEventPublisherPort.java||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:backend\\src\\main\\java\\com\\energiaclara\\energyops\\domain\\port\\out\\DomainEventPublisherPort.java||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Lenovo\\OneDrive - Fundaci\u00F3n Estudiantes UPSA\\Programacion web\\CarpetadepruebaEnergiaClaraIA\\EnergiaClara-IA-main\\backend\\src\\main\\java\\com\\energiaclara\\energyops\\domain\\exception\\NoAnomalyDetectedException.java||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:backend\\src\\main\\java\\com\\energiaclara\\energyops\\domain\\exception\\NoAnomalyDetectedException.java||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Lenovo\\OneDrive - Fundaci\u00F3n Estudiantes UPSA\\Programacion web\\CarpetadepruebaEnergiaClaraIA\\EnergiaClara-IA-main\\backend\\src\\main\\java\\com\\energiaclara\\energyops\\domain\\service\\AnomalyDetectionDomainService.java||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:backend\\src\\main\\java\\com\\energiaclara\\energyops\\domain\\service\\AnomalyDetectionDomainService.java||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Lenovo\\OneDrive - Fundaci\u00F3n Estudiantes UPSA\\Programacion web\\CarpetadepruebaEnergiaClaraIA\\EnergiaClara-IA-main\\backend\\src\\main\\java\\com\\energiaclara\\energyops\\application\\port\\in\\AnalyzeReadingUseCase.java||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:backend\\src\\main\\java\\com\\energiaclara\\energyops\\application\\port\\in\\AnalyzeReadingUseCase.java||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Lenovo\\OneDrive - Fundaci\u00F3n Estudiantes UPSA\\Programacion web\\CarpetadepruebaEnergiaClaraIA\\EnergiaClara-IA-main\\backend\\src\\main\\java\\com\\energiaclara\\energyops\\application\\port\\in\\AnalyzeReadingCommand.java||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:backend\\src\\main\\java\\com\\energiaclara\\energyops\\application\\port\\in\\AnalyzeReadingCommand.java||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Lenovo\\OneDrive - Fundaci\u00F3n Estudiantes UPSA\\Programacion web\\CarpetadepruebaEnergiaClaraIA\\EnergiaClara-IA-main\\backend\\src\\main\\java\\com\\energiaclara\\energyops\\application\\port\\in\\AnalyzeReadingResult.java||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:backend\\src\\main\\java\\com\\energiaclara\\energyops\\application\\port\\in\\AnalyzeReadingResult.java||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Lenovo\\OneDrive - Fundaci\u00F3n Estudiantes UPSA\\Programacion web\\CarpetadepruebaEnergiaClaraIA\\EnergiaClara-IA-main\\backend\\src\\main\\java\\com\\energiaclara\\energyops\\application\\service\\EnergyAnalysisAppService.java||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:backend\\src\\main\\java\\com\\energiaclara\\energyops\\application\\service\\EnergyAnalysisAppService.java||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Lenovo\\OneDrive - Fundaci\u00F3n Estudiantes UPSA\\Programacion web\\CarpetadepruebaEnergiaClaraIA\\EnergiaClara-IA-main\\backend\\src\\main\\java\\com\\energiaclara\\energyops\\infrastructure\\persistence\\AnomalyRepositoryAdapter.java||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:backend\\src\\main\\java\\com\\energiaclara\\energyops\\infrastructure\\persistence\\AnomalyRepositoryAdapter.java||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Lenovo\\OneDrive - Fundaci\u00F3n Estudiantes UPSA\\Programacion web\\CarpetadepruebaEnergiaClaraIA\\EnergiaClara-IA-main\\backend\\src\\main\\java\\com\\energiaclara\\energyops\\infrastructure\\event\\SpringDomainEventPublisher.java||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:backend\\src\\main\\java\\com\\energiaclara\\energyops\\infrastructure\\event\\SpringDomainEventPublisher.java||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Lenovo\\OneDrive - Fundaci\u00F3n Estudiantes UPSA\\Programacion web\\CarpetadepruebaEnergiaClaraIA\\EnergiaClara-IA-main\\backend\\src\\main\\java\\com\\energiaclara\\energyops\\infrastructure\\persistence\\EnergyAnomalyRepository.java||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:backend\\src\\main\\java\\com\\energiaclara\\energyops\\infrastructure\\persistence\\EnergyAnomalyRepository.java||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Lenovo\\OneDrive - Fundaci\u00F3n Estudiantes UPSA\\Programacion web\\CarpetadepruebaEnergiaClaraIA\\EnergiaClara-IA-main\\backend\\src\\main\\java\\com\\energiaclara\\energyops\\api\\EnergyOpsController.java||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:backend\\src\\main\\java\\com\\energiaclara\\energyops\\api\\EnergyOpsController.java||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Lenovo\\OneDrive - Fundaci\u00F3n Estudiantes UPSA\\Programacion web\\CarpetadepruebaEnergiaClaraIA\\EnergiaClara-IA-main\\backend\\src\\main\\java\\com\\energiaclara\\energyops\\application\\EnergyAnalysisService.java||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:backend\\src\\main\\java\\com\\energiaclara\\energyops\\application\\EnergyAnalysisService.java||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Lenovo\\OneDrive - Fundaci\u00F3n Estudiantes UPSA\\Programacion web\\CarpetadepruebaEnergiaClaraIA\\EnergiaClara-IA-main\\backend\\src\\main\\java\\com\\energiaclara\\energyops\\infrastructure\\persistence\\EnergyAnomalyEntity.java||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:backend\\src\\main\\java\\com\\energiaclara\\energyops\\infrastructure\\persistence\\EnergyAnomalyEntity.java||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Lenovo\\OneDrive - Fundaci\u00F3n Estudiantes UPSA\\Programacion web\\CarpetadepruebaEnergiaClaraIA\\EnergiaClara-IA-main\\backend\\src\\test\\java\\com\\energiaclara\\energyops\\domain\\model\\AnomalyTest.java||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:backend\\src\\test\\java\\com\\energiaclara\\energyops\\domain\\model\\AnomalyTest.java||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Lenovo\\OneDrive - Fundaci\u00F3n Estudiantes UPSA\\Programacion web\\CarpetadepruebaEnergiaClaraIA\\EnergiaClara-IA-main\\backend\\src\\test\\java\\com\\energiaclara\\energyops\\domain\\vo\\EnergyValueTest.java||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:backend\\src\\test\\java\\com\\energiaclara\\energyops\\domain\\vo\\EnergyValueTest.java||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Lenovo\\OneDrive - Fundaci\u00F3n Estudiantes UPSA\\Programacion web\\CarpetadepruebaEnergiaClaraIA\\EnergiaClara-IA-main\\database\\energyops-sqlserver.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:database\\energyops-sqlserver.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Lenovo\\OneDrive - Fundaci\u00F3n Estudiantes UPSA\\Programacion web\\CarpetadepruebaEnergiaClaraIA\\EnergiaClara-IA-main\\database\\schema.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:database\\schema.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Lenovo\\OneDrive - Fundaci\u00F3n Estudiantes UPSA\\Programacion web\\CarpetadepruebaEnergiaClaraIA\\EnergiaClara-IA-main\\backend\\src\\main\\java\\com\\energiaclara\\bootstrap\\EnergiaclaraApplication.java||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:backend\\src\\main\\java\\com\\energiaclara\\bootstrap\\EnergiaclaraApplication.java||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "EnergiaclaraApplication.java",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive - Fundaci\u00F3n Estudiantes UPSA\\Programacion web\\CarpetadepruebaEnergiaClaraIA\\EnergiaClara-IA-main\\backend\\src\\main\\java\\com\\energiaclara\\bootstrap\\EnergiaclaraApplication.java",
+              "RelativeDocumentMoniker": "backend\\src\\main\\java\\com\\energiaclara\\bootstrap\\EnergiaclaraApplication.java",
+              "ToolTip": "C:\\Users\\Lenovo\\OneDrive - Fundaci\u00F3n Estudiantes UPSA\\Programacion web\\CarpetadepruebaEnergiaClaraIA\\EnergiaClara-IA-main\\backend\\src\\main\\java\\com\\energiaclara\\bootstrap\\EnergiaclaraApplication.java",
+              "RelativeToolTip": "backend\\src\\main\\java\\com\\energiaclara\\bootstrap\\EnergiaclaraApplication.java",
+              "ViewState": "AgIAAAUAAAAAAAAAAABBwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2026-05-16T14:54:28.235Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "schema.sql ",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive - Fundaci\u00F3n Estudiantes UPSA\\Programacion web\\CarpetadepruebaEnergiaClaraIA\\EnergiaClara-IA-main\\database\\schema.sql",
+              "RelativeDocumentMoniker": "database\\schema.sql",
+              "ToolTip": "schema.sql ",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2026-05-16T14:06:57.028Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "energyops-sqlserver.sql ",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive - Fundaci\u00F3n Estudiantes UPSA\\Programacion web\\CarpetadepruebaEnergiaClaraIA\\EnergiaClara-IA-main\\database\\energyops-sqlserver.sql",
+              "RelativeDocumentMoniker": "database\\energyops-sqlserver.sql",
+              "ToolTip": "energyops-sqlserver.sql ",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2026-05-16T14:06:44.894Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "package.json",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive - Fundaci\u00F3n Estudiantes UPSA\\Programacion web\\CarpetadepruebaEnergiaClaraIA\\EnergiaClara-IA-main\\frontend\\package.json",
+              "RelativeDocumentMoniker": "frontend\\package.json",
+              "ToolTip": "C:\\Users\\Lenovo\\OneDrive - Fundaci\u00F3n Estudiantes UPSA\\Programacion web\\CarpetadepruebaEnergiaClaraIA\\EnergiaClara-IA-main\\frontend\\package.json",
+              "RelativeToolTip": "frontend\\package.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-05-16T14:03:56.996Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "LoginPage.jsx",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive - Fundaci\u00F3n Estudiantes UPSA\\Programacion web\\CarpetadepruebaEnergiaClaraIA\\EnergiaClara-IA-main\\frontend\\src\\pages\\LoginPage.jsx",
+              "RelativeDocumentMoniker": "frontend\\src\\pages\\LoginPage.jsx",
+              "ToolTip": "C:\\Users\\Lenovo\\OneDrive - Fundaci\u00F3n Estudiantes UPSA\\Programacion web\\CarpetadepruebaEnergiaClaraIA\\EnergiaClara-IA-main\\frontend\\src\\pages\\LoginPage.jsx",
+              "RelativeToolTip": "frontend\\src\\pages\\LoginPage.jsx",
+              "ViewState": "AgIAADkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
+              "WhenOpened": "2026-05-16T14:03:36.92Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "DeviationPercent.java",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive - Fundaci\u00F3n Estudiantes UPSA\\Programacion web\\CarpetadepruebaEnergiaClaraIA\\EnergiaClara-IA-main\\backend\\src\\main\\java\\com\\energiaclara\\energyops\\domain\\vo\\DeviationPercent.java",
+              "RelativeDocumentMoniker": "backend\\src\\main\\java\\com\\energiaclara\\energyops\\domain\\vo\\DeviationPercent.java",
+              "ToolTip": "C:\\Users\\Lenovo\\OneDrive - Fundaci\u00F3n Estudiantes UPSA\\Programacion web\\CarpetadepruebaEnergiaClaraIA\\EnergiaClara-IA-main\\backend\\src\\main\\java\\com\\energiaclara\\energyops\\domain\\vo\\DeviationPercent.java",
+              "RelativeToolTip": "backend\\src\\main\\java\\com\\energiaclara\\energyops\\domain\\vo\\DeviationPercent.java",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2026-05-16T13:12:49.997Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "EnergyValue.java",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive - Fundaci\u00F3n Estudiantes UPSA\\Programacion web\\CarpetadepruebaEnergiaClaraIA\\EnergiaClara-IA-main\\backend\\src\\main\\java\\com\\energiaclara\\energyops\\domain\\vo\\EnergyValue.java",
+              "RelativeDocumentMoniker": "backend\\src\\main\\java\\com\\energiaclara\\energyops\\domain\\vo\\EnergyValue.java",
+              "ToolTip": "C:\\Users\\Lenovo\\OneDrive - Fundaci\u00F3n Estudiantes UPSA\\Programacion web\\CarpetadepruebaEnergiaClaraIA\\EnergiaClara-IA-main\\backend\\src\\main\\java\\com\\energiaclara\\energyops\\domain\\vo\\EnergyValue.java",
+              "RelativeToolTip": "backend\\src\\main\\java\\com\\energiaclara\\energyops\\domain\\vo\\EnergyValue.java",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2026-05-16T13:12:44.956Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "User.java",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive - Fundaci\u00F3n Estudiantes UPSA\\Programacion web\\CarpetadepruebaEnergiaClaraIA\\EnergiaClara-IA-main\\backend\\src\\main\\java\\com\\energiaclara\\domain\\model\\User.java",
+              "RelativeDocumentMoniker": "backend\\src\\main\\java\\com\\energiaclara\\domain\\model\\User.java",
+              "ToolTip": "C:\\Users\\Lenovo\\OneDrive - Fundaci\u00F3n Estudiantes UPSA\\Programacion web\\CarpetadepruebaEnergiaClaraIA\\EnergiaClara-IA-main\\backend\\src\\main\\java\\com\\energiaclara\\domain\\model\\User.java",
+              "RelativeToolTip": "backend\\src\\main\\java\\com\\energiaclara\\domain\\model\\User.java",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2026-05-16T13:08:37.594Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "AnomalyDetectionDomainServiceTest.java",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive - Fundaci\u00F3n Estudiantes UPSA\\Programacion web\\CarpetadepruebaEnergiaClaraIA\\EnergiaClara-IA-main\\backend\\src\\test\\java\\com\\energiaclara\\energyops\\domain\\service\\AnomalyDetectionDomainServiceTest.java",
+              "RelativeDocumentMoniker": "backend\\src\\test\\java\\com\\energiaclara\\energyops\\domain\\service\\AnomalyDetectionDomainServiceTest.java",
+              "ToolTip": "C:\\Users\\Lenovo\\OneDrive - Fundaci\u00F3n Estudiantes UPSA\\Programacion web\\CarpetadepruebaEnergiaClaraIA\\EnergiaClara-IA-main\\backend\\src\\test\\java\\com\\energiaclara\\energyops\\domain\\service\\AnomalyDetectionDomainServiceTest.java",
+              "RelativeToolTip": "backend\\src\\test\\java\\com\\energiaclara\\energyops\\domain\\service\\AnomalyDetectionDomainServiceTest.java",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2026-05-16T13:41:50.185Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "DeviationPercentTest.java",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive - Fundaci\u00F3n Estudiantes UPSA\\Programacion web\\CarpetadepruebaEnergiaClaraIA\\EnergiaClara-IA-main\\backend\\src\\test\\java\\com\\energiaclara\\energyops\\domain\\vo\\DeviationPercentTest.java",
+              "RelativeDocumentMoniker": "backend\\src\\test\\java\\com\\energiaclara\\energyops\\domain\\vo\\DeviationPercentTest.java",
+              "ToolTip": "C:\\Users\\Lenovo\\OneDrive - Fundaci\u00F3n Estudiantes UPSA\\Programacion web\\CarpetadepruebaEnergiaClaraIA\\EnergiaClara-IA-main\\backend\\src\\test\\java\\com\\energiaclara\\energyops\\domain\\vo\\DeviationPercentTest.java",
+              "RelativeToolTip": "backend\\src\\test\\java\\com\\energiaclara\\energyops\\domain\\vo\\DeviationPercentTest.java",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2026-05-16T13:41:40.098Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "SeverityLevelTest.java",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive - Fundaci\u00F3n Estudiantes UPSA\\Programacion web\\CarpetadepruebaEnergiaClaraIA\\EnergiaClara-IA-main\\backend\\src\\test\\java\\com\\energiaclara\\energyops\\domain\\vo\\SeverityLevelTest.java",
+              "RelativeDocumentMoniker": "backend\\src\\test\\java\\com\\energiaclara\\energyops\\domain\\vo\\SeverityLevelTest.java",
+              "ToolTip": "C:\\Users\\Lenovo\\OneDrive - Fundaci\u00F3n Estudiantes UPSA\\Programacion web\\CarpetadepruebaEnergiaClaraIA\\EnergiaClara-IA-main\\backend\\src\\test\\java\\com\\energiaclara\\energyops\\domain\\vo\\SeverityLevelTest.java",
+              "RelativeToolTip": "backend\\src\\test\\java\\com\\energiaclara\\energyops\\domain\\vo\\SeverityLevelTest.java",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2026-05-16T13:41:44.396Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "SeverityLevel.java",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive - Fundaci\u00F3n Estudiantes UPSA\\Programacion web\\CarpetadepruebaEnergiaClaraIA\\EnergiaClara-IA-main\\backend\\src\\main\\java\\com\\energiaclara\\energyops\\domain\\vo\\SeverityLevel.java",
+              "RelativeDocumentMoniker": "backend\\src\\main\\java\\com\\energiaclara\\energyops\\domain\\vo\\SeverityLevel.java",
+              "ToolTip": "C:\\Users\\Lenovo\\OneDrive - Fundaci\u00F3n Estudiantes UPSA\\Programacion web\\CarpetadepruebaEnergiaClaraIA\\EnergiaClara-IA-main\\backend\\src\\main\\java\\com\\energiaclara\\energyops\\domain\\vo\\SeverityLevel.java",
+              "RelativeToolTip": "backend\\src\\main\\java\\com\\energiaclara\\energyops\\domain\\vo\\SeverityLevel.java",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2026-05-16T13:12:53.592Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "ImpactEstimate.java",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive - Fundaci\u00F3n Estudiantes UPSA\\Programacion web\\CarpetadepruebaEnergiaClaraIA\\EnergiaClara-IA-main\\backend\\src\\main\\java\\com\\energiaclara\\energyops\\domain\\vo\\ImpactEstimate.java",
+              "RelativeDocumentMoniker": "backend\\src\\main\\java\\com\\energiaclara\\energyops\\domain\\vo\\ImpactEstimate.java",
+              "ToolTip": "C:\\Users\\Lenovo\\OneDrive - Fundaci\u00F3n Estudiantes UPSA\\Programacion web\\CarpetadepruebaEnergiaClaraIA\\EnergiaClara-IA-main\\backend\\src\\main\\java\\com\\energiaclara\\energyops\\domain\\vo\\ImpactEstimate.java",
+              "RelativeToolTip": "backend\\src\\main\\java\\com\\energiaclara\\energyops\\domain\\vo\\ImpactEstimate.java",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2026-05-16T13:12:57.145Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "AnomalyScope.java",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive - Fundaci\u00F3n Estudiantes UPSA\\Programacion web\\CarpetadepruebaEnergiaClaraIA\\EnergiaClara-IA-main\\backend\\src\\main\\java\\com\\energiaclara\\energyops\\domain\\vo\\AnomalyScope.java",
+              "RelativeDocumentMoniker": "backend\\src\\main\\java\\com\\energiaclara\\energyops\\domain\\vo\\AnomalyScope.java",
+              "ToolTip": "C:\\Users\\Lenovo\\OneDrive - Fundaci\u00F3n Estudiantes UPSA\\Programacion web\\CarpetadepruebaEnergiaClaraIA\\EnergiaClara-IA-main\\backend\\src\\main\\java\\com\\energiaclara\\energyops\\domain\\vo\\AnomalyScope.java",
+              "RelativeToolTip": "backend\\src\\main\\java\\com\\energiaclara\\energyops\\domain\\vo\\AnomalyScope.java",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2026-05-16T13:13:00.568Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "EnergyValueTest.java",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive - Fundaci\u00F3n Estudiantes UPSA\\Programacion web\\CarpetadepruebaEnergiaClaraIA\\EnergiaClara-IA-main\\backend\\src\\test\\java\\com\\energiaclara\\energyops\\domain\\vo\\EnergyValueTest.java",
+              "RelativeDocumentMoniker": "backend\\src\\test\\java\\com\\energiaclara\\energyops\\domain\\vo\\EnergyValueTest.java",
+              "ToolTip": "C:\\Users\\Lenovo\\OneDrive - Fundaci\u00F3n Estudiantes UPSA\\Programacion web\\CarpetadepruebaEnergiaClaraIA\\EnergiaClara-IA-main\\backend\\src\\test\\java\\com\\energiaclara\\energyops\\domain\\vo\\EnergyValueTest.java",
+              "RelativeToolTip": "backend\\src\\test\\java\\com\\energiaclara\\energyops\\domain\\vo\\EnergyValueTest.java",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2026-05-16T13:14:56.444Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "AnomalyTest.java",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive - Fundaci\u00F3n Estudiantes UPSA\\Programacion web\\CarpetadepruebaEnergiaClaraIA\\EnergiaClara-IA-main\\backend\\src\\test\\java\\com\\energiaclara\\energyops\\domain\\model\\AnomalyTest.java",
+              "RelativeDocumentMoniker": "backend\\src\\test\\java\\com\\energiaclara\\energyops\\domain\\model\\AnomalyTest.java",
+              "ToolTip": "C:\\Users\\Lenovo\\OneDrive - Fundaci\u00F3n Estudiantes UPSA\\Programacion web\\CarpetadepruebaEnergiaClaraIA\\EnergiaClara-IA-main\\backend\\src\\test\\java\\com\\energiaclara\\energyops\\domain\\model\\AnomalyTest.java",
+              "RelativeToolTip": "backend\\src\\test\\java\\com\\energiaclara\\energyops\\domain\\model\\AnomalyTest.java",
+              "ViewState": "AgIAAAgAAAAAAAAAAABBwGgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2026-05-16T13:14:44.664Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "EnergyAnomalyEntity.java",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive - Fundaci\u00F3n Estudiantes UPSA\\Programacion web\\CarpetadepruebaEnergiaClaraIA\\EnergiaClara-IA-main\\backend\\src\\main\\java\\com\\energiaclara\\energyops\\infrastructure\\persistence\\EnergyAnomalyEntity.java",
+              "RelativeDocumentMoniker": "backend\\src\\main\\java\\com\\energiaclara\\energyops\\infrastructure\\persistence\\EnergyAnomalyEntity.java",
+              "ToolTip": "C:\\Users\\Lenovo\\OneDrive - Fundaci\u00F3n Estudiantes UPSA\\Programacion web\\CarpetadepruebaEnergiaClaraIA\\EnergiaClara-IA-main\\backend\\src\\main\\java\\com\\energiaclara\\energyops\\infrastructure\\persistence\\EnergyAnomalyEntity.java",
+              "RelativeToolTip": "backend\\src\\main\\java\\com\\energiaclara\\energyops\\infrastructure\\persistence\\EnergyAnomalyEntity.java",
+              "ViewState": "AgIAAB0AAAAAAAAAAABBwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2026-05-16T13:14:36.887Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "EnergyAnalysisService.java",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive - Fundaci\u00F3n Estudiantes UPSA\\Programacion web\\CarpetadepruebaEnergiaClaraIA\\EnergiaClara-IA-main\\backend\\src\\main\\java\\com\\energiaclara\\energyops\\application\\EnergyAnalysisService.java",
+              "RelativeDocumentMoniker": "backend\\src\\main\\java\\com\\energiaclara\\energyops\\application\\EnergyAnalysisService.java",
+              "ToolTip": "C:\\Users\\Lenovo\\OneDrive - Fundaci\u00F3n Estudiantes UPSA\\Programacion web\\CarpetadepruebaEnergiaClaraIA\\EnergiaClara-IA-main\\backend\\src\\main\\java\\com\\energiaclara\\energyops\\application\\EnergyAnalysisService.java",
+              "RelativeToolTip": "backend\\src\\main\\java\\com\\energiaclara\\energyops\\application\\EnergyAnalysisService.java",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2026-05-16T13:14:34.028Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "EnergyOpsController.java",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive - Fundaci\u00F3n Estudiantes UPSA\\Programacion web\\CarpetadepruebaEnergiaClaraIA\\EnergiaClara-IA-main\\backend\\src\\main\\java\\com\\energiaclara\\energyops\\api\\EnergyOpsController.java",
+              "RelativeDocumentMoniker": "backend\\src\\main\\java\\com\\energiaclara\\energyops\\api\\EnergyOpsController.java",
+              "ToolTip": "C:\\Users\\Lenovo\\OneDrive - Fundaci\u00F3n Estudiantes UPSA\\Programacion web\\CarpetadepruebaEnergiaClaraIA\\EnergiaClara-IA-main\\backend\\src\\main\\java\\com\\energiaclara\\energyops\\api\\EnergyOpsController.java",
+              "RelativeToolTip": "backend\\src\\main\\java\\com\\energiaclara\\energyops\\api\\EnergyOpsController.java",
+              "ViewState": "AgIAAAgAAAAAAAAAAABBwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2026-05-16T13:14:31.781Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "EnergyAnomalyRepository.java",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive - Fundaci\u00F3n Estudiantes UPSA\\Programacion web\\CarpetadepruebaEnergiaClaraIA\\EnergiaClara-IA-main\\backend\\src\\main\\java\\com\\energiaclara\\energyops\\infrastructure\\persistence\\EnergyAnomalyRepository.java",
+              "RelativeDocumentMoniker": "backend\\src\\main\\java\\com\\energiaclara\\energyops\\infrastructure\\persistence\\EnergyAnomalyRepository.java",
+              "ToolTip": "C:\\Users\\Lenovo\\OneDrive - Fundaci\u00F3n Estudiantes UPSA\\Programacion web\\CarpetadepruebaEnergiaClaraIA\\EnergiaClara-IA-main\\backend\\src\\main\\java\\com\\energiaclara\\energyops\\infrastructure\\persistence\\EnergyAnomalyRepository.java",
+              "RelativeToolTip": "backend\\src\\main\\java\\com\\energiaclara\\energyops\\infrastructure\\persistence\\EnergyAnomalyRepository.java",
+              "ViewState": "AgIAAAgAAAAAAAAAAABBwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2026-05-16T13:14:21.927Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "SpringDomainEventPublisher.java",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive - Fundaci\u00F3n Estudiantes UPSA\\Programacion web\\CarpetadepruebaEnergiaClaraIA\\EnergiaClara-IA-main\\backend\\src\\main\\java\\com\\energiaclara\\energyops\\infrastructure\\event\\SpringDomainEventPublisher.java",
+              "RelativeDocumentMoniker": "backend\\src\\main\\java\\com\\energiaclara\\energyops\\infrastructure\\event\\SpringDomainEventPublisher.java",
+              "ToolTip": "C:\\Users\\Lenovo\\OneDrive - Fundaci\u00F3n Estudiantes UPSA\\Programacion web\\CarpetadepruebaEnergiaClaraIA\\EnergiaClara-IA-main\\backend\\src\\main\\java\\com\\energiaclara\\energyops\\infrastructure\\event\\SpringDomainEventPublisher.java",
+              "RelativeToolTip": "backend\\src\\main\\java\\com\\energiaclara\\energyops\\infrastructure\\event\\SpringDomainEventPublisher.java",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2026-05-16T13:14:19.115Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "AnomalyRepositoryAdapter.java",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive - Fundaci\u00F3n Estudiantes UPSA\\Programacion web\\CarpetadepruebaEnergiaClaraIA\\EnergiaClara-IA-main\\backend\\src\\main\\java\\com\\energiaclara\\energyops\\infrastructure\\persistence\\AnomalyRepositoryAdapter.java",
+              "RelativeDocumentMoniker": "backend\\src\\main\\java\\com\\energiaclara\\energyops\\infrastructure\\persistence\\AnomalyRepositoryAdapter.java",
+              "ToolTip": "C:\\Users\\Lenovo\\OneDrive - Fundaci\u00F3n Estudiantes UPSA\\Programacion web\\CarpetadepruebaEnergiaClaraIA\\EnergiaClara-IA-main\\backend\\src\\main\\java\\com\\energiaclara\\energyops\\infrastructure\\persistence\\AnomalyRepositoryAdapter.java",
+              "RelativeToolTip": "backend\\src\\main\\java\\com\\energiaclara\\energyops\\infrastructure\\persistence\\AnomalyRepositoryAdapter.java",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2026-05-16T13:14:15.6Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "EnergyAnalysisAppService.java",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive - Fundaci\u00F3n Estudiantes UPSA\\Programacion web\\CarpetadepruebaEnergiaClaraIA\\EnergiaClara-IA-main\\backend\\src\\main\\java\\com\\energiaclara\\energyops\\application\\service\\EnergyAnalysisAppService.java",
+              "RelativeDocumentMoniker": "backend\\src\\main\\java\\com\\energiaclara\\energyops\\application\\service\\EnergyAnalysisAppService.java",
+              "ToolTip": "C:\\Users\\Lenovo\\OneDrive - Fundaci\u00F3n Estudiantes UPSA\\Programacion web\\CarpetadepruebaEnergiaClaraIA\\EnergiaClara-IA-main\\backend\\src\\main\\java\\com\\energiaclara\\energyops\\application\\service\\EnergyAnalysisAppService.java",
+              "RelativeToolTip": "backend\\src\\main\\java\\com\\energiaclara\\energyops\\application\\service\\EnergyAnalysisAppService.java",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2026-05-16T13:14:07.397Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "AnalyzeReadingResult.java",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive - Fundaci\u00F3n Estudiantes UPSA\\Programacion web\\CarpetadepruebaEnergiaClaraIA\\EnergiaClara-IA-main\\backend\\src\\main\\java\\com\\energiaclara\\energyops\\application\\port\\in\\AnalyzeReadingResult.java",
+              "RelativeDocumentMoniker": "backend\\src\\main\\java\\com\\energiaclara\\energyops\\application\\port\\in\\AnalyzeReadingResult.java",
+              "ToolTip": "C:\\Users\\Lenovo\\OneDrive - Fundaci\u00F3n Estudiantes UPSA\\Programacion web\\CarpetadepruebaEnergiaClaraIA\\EnergiaClara-IA-main\\backend\\src\\main\\java\\com\\energiaclara\\energyops\\application\\port\\in\\AnalyzeReadingResult.java",
+              "RelativeToolTip": "backend\\src\\main\\java\\com\\energiaclara\\energyops\\application\\port\\in\\AnalyzeReadingResult.java",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2026-05-16T13:14:00.281Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "AnalyzeReadingCommand.java",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive - Fundaci\u00F3n Estudiantes UPSA\\Programacion web\\CarpetadepruebaEnergiaClaraIA\\EnergiaClara-IA-main\\backend\\src\\main\\java\\com\\energiaclara\\energyops\\application\\port\\in\\AnalyzeReadingCommand.java",
+              "RelativeDocumentMoniker": "backend\\src\\main\\java\\com\\energiaclara\\energyops\\application\\port\\in\\AnalyzeReadingCommand.java",
+              "ToolTip": "C:\\Users\\Lenovo\\OneDrive - Fundaci\u00F3n Estudiantes UPSA\\Programacion web\\CarpetadepruebaEnergiaClaraIA\\EnergiaClara-IA-main\\backend\\src\\main\\java\\com\\energiaclara\\energyops\\application\\port\\in\\AnalyzeReadingCommand.java",
+              "RelativeToolTip": "backend\\src\\main\\java\\com\\energiaclara\\energyops\\application\\port\\in\\AnalyzeReadingCommand.java",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2026-05-16T13:13:55.708Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "AnalyzeReadingUseCase.java",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive - Fundaci\u00F3n Estudiantes UPSA\\Programacion web\\CarpetadepruebaEnergiaClaraIA\\EnergiaClara-IA-main\\backend\\src\\main\\java\\com\\energiaclara\\energyops\\application\\port\\in\\AnalyzeReadingUseCase.java",
+              "RelativeDocumentMoniker": "backend\\src\\main\\java\\com\\energiaclara\\energyops\\application\\port\\in\\AnalyzeReadingUseCase.java",
+              "ToolTip": "C:\\Users\\Lenovo\\OneDrive - Fundaci\u00F3n Estudiantes UPSA\\Programacion web\\CarpetadepruebaEnergiaClaraIA\\EnergiaClara-IA-main\\backend\\src\\main\\java\\com\\energiaclara\\energyops\\application\\port\\in\\AnalyzeReadingUseCase.java",
+              "RelativeToolTip": "backend\\src\\main\\java\\com\\energiaclara\\energyops\\application\\port\\in\\AnalyzeReadingUseCase.java",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2026-05-16T13:13:51.895Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "AnomalyDetectionDomainService.java",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive - Fundaci\u00F3n Estudiantes UPSA\\Programacion web\\CarpetadepruebaEnergiaClaraIA\\EnergiaClara-IA-main\\backend\\src\\main\\java\\com\\energiaclara\\energyops\\domain\\service\\AnomalyDetectionDomainService.java",
+              "RelativeDocumentMoniker": "backend\\src\\main\\java\\com\\energiaclara\\energyops\\domain\\service\\AnomalyDetectionDomainService.java",
+              "ToolTip": "C:\\Users\\Lenovo\\OneDrive - Fundaci\u00F3n Estudiantes UPSA\\Programacion web\\CarpetadepruebaEnergiaClaraIA\\EnergiaClara-IA-main\\backend\\src\\main\\java\\com\\energiaclara\\energyops\\domain\\service\\AnomalyDetectionDomainService.java",
+              "RelativeToolTip": "backend\\src\\main\\java\\com\\energiaclara\\energyops\\domain\\service\\AnomalyDetectionDomainService.java",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2026-05-16T13:13:47.093Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "NoAnomalyDetectedException.java",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive - Fundaci\u00F3n Estudiantes UPSA\\Programacion web\\CarpetadepruebaEnergiaClaraIA\\EnergiaClara-IA-main\\backend\\src\\main\\java\\com\\energiaclara\\energyops\\domain\\exception\\NoAnomalyDetectedException.java",
+              "RelativeDocumentMoniker": "backend\\src\\main\\java\\com\\energiaclara\\energyops\\domain\\exception\\NoAnomalyDetectedException.java",
+              "ToolTip": "C:\\Users\\Lenovo\\OneDrive - Fundaci\u00F3n Estudiantes UPSA\\Programacion web\\CarpetadepruebaEnergiaClaraIA\\EnergiaClara-IA-main\\backend\\src\\main\\java\\com\\energiaclara\\energyops\\domain\\exception\\NoAnomalyDetectedException.java",
+              "RelativeToolTip": "backend\\src\\main\\java\\com\\energiaclara\\energyops\\domain\\exception\\NoAnomalyDetectedException.java",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2026-05-16T13:13:41.918Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "DomainEventPublisherPort.java",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive - Fundaci\u00F3n Estudiantes UPSA\\Programacion web\\CarpetadepruebaEnergiaClaraIA\\EnergiaClara-IA-main\\backend\\src\\main\\java\\com\\energiaclara\\energyops\\domain\\port\\out\\DomainEventPublisherPort.java",
+              "RelativeDocumentMoniker": "backend\\src\\main\\java\\com\\energiaclara\\energyops\\domain\\port\\out\\DomainEventPublisherPort.java",
+              "ToolTip": "C:\\Users\\Lenovo\\OneDrive - Fundaci\u00F3n Estudiantes UPSA\\Programacion web\\CarpetadepruebaEnergiaClaraIA\\EnergiaClara-IA-main\\backend\\src\\main\\java\\com\\energiaclara\\energyops\\domain\\port\\out\\DomainEventPublisherPort.java",
+              "RelativeToolTip": "backend\\src\\main\\java\\com\\energiaclara\\energyops\\domain\\port\\out\\DomainEventPublisherPort.java",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2026-05-16T13:13:38.632Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "AnomalyRepositoryPort.java",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive - Fundaci\u00F3n Estudiantes UPSA\\Programacion web\\CarpetadepruebaEnergiaClaraIA\\EnergiaClara-IA-main\\backend\\src\\main\\java\\com\\energiaclara\\energyops\\domain\\port\\out\\AnomalyRepositoryPort.java",
+              "RelativeDocumentMoniker": "backend\\src\\main\\java\\com\\energiaclara\\energyops\\domain\\port\\out\\AnomalyRepositoryPort.java",
+              "ToolTip": "C:\\Users\\Lenovo\\OneDrive - Fundaci\u00F3n Estudiantes UPSA\\Programacion web\\CarpetadepruebaEnergiaClaraIA\\EnergiaClara-IA-main\\backend\\src\\main\\java\\com\\energiaclara\\energyops\\domain\\port\\out\\AnomalyRepositoryPort.java",
+              "RelativeToolTip": "backend\\src\\main\\java\\com\\energiaclara\\energyops\\domain\\port\\out\\AnomalyRepositoryPort.java",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2026-05-16T13:13:35.569Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Anomaly.java",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive - Fundaci\u00F3n Estudiantes UPSA\\Programacion web\\CarpetadepruebaEnergiaClaraIA\\EnergiaClara-IA-main\\backend\\src\\main\\java\\com\\energiaclara\\energyops\\domain\\model\\Anomaly.java",
+              "RelativeDocumentMoniker": "backend\\src\\main\\java\\com\\energiaclara\\energyops\\domain\\model\\Anomaly.java",
+              "ToolTip": "C:\\Users\\Lenovo\\OneDrive - Fundaci\u00F3n Estudiantes UPSA\\Programacion web\\CarpetadepruebaEnergiaClaraIA\\EnergiaClara-IA-main\\backend\\src\\main\\java\\com\\energiaclara\\energyops\\domain\\model\\Anomaly.java",
+              "RelativeToolTip": "backend\\src\\main\\java\\com\\energiaclara\\energyops\\domain\\model\\Anomaly.java",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAKYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2026-05-16T13:13:32.036Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "AnomalyResolvedEvent.java",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive - Fundaci\u00F3n Estudiantes UPSA\\Programacion web\\CarpetadepruebaEnergiaClaraIA\\EnergiaClara-IA-main\\backend\\src\\main\\java\\com\\energiaclara\\energyops\\domain\\event\\AnomalyResolvedEvent.java",
+              "RelativeDocumentMoniker": "backend\\src\\main\\java\\com\\energiaclara\\energyops\\domain\\event\\AnomalyResolvedEvent.java",
+              "ToolTip": "C:\\Users\\Lenovo\\OneDrive - Fundaci\u00F3n Estudiantes UPSA\\Programacion web\\CarpetadepruebaEnergiaClaraIA\\EnergiaClara-IA-main\\backend\\src\\main\\java\\com\\energiaclara\\energyops\\domain\\event\\AnomalyResolvedEvent.java",
+              "RelativeToolTip": "backend\\src\\main\\java\\com\\energiaclara\\energyops\\domain\\event\\AnomalyResolvedEvent.java",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2026-05-16T13:13:20.868Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "AnomalyDetectedEvent.java",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive - Fundaci\u00F3n Estudiantes UPSA\\Programacion web\\CarpetadepruebaEnergiaClaraIA\\EnergiaClara-IA-main\\backend\\src\\main\\java\\com\\energiaclara\\energyops\\domain\\event\\AnomalyDetectedEvent.java",
+              "RelativeDocumentMoniker": "backend\\src\\main\\java\\com\\energiaclara\\energyops\\domain\\event\\AnomalyDetectedEvent.java",
+              "ToolTip": "C:\\Users\\Lenovo\\OneDrive - Fundaci\u00F3n Estudiantes UPSA\\Programacion web\\CarpetadepruebaEnergiaClaraIA\\EnergiaClara-IA-main\\backend\\src\\main\\java\\com\\energiaclara\\energyops\\domain\\event\\AnomalyDetectedEvent.java",
+              "RelativeToolTip": "backend\\src\\main\\java\\com\\energiaclara\\energyops\\domain\\event\\AnomalyDetectedEvent.java",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2026-05-16T13:13:17.374Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "DomainEvent.java",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive - Fundaci\u00F3n Estudiantes UPSA\\Programacion web\\CarpetadepruebaEnergiaClaraIA\\EnergiaClara-IA-main\\backend\\src\\main\\java\\com\\energiaclara\\energyops\\domain\\event\\DomainEvent.java",
+              "RelativeDocumentMoniker": "backend\\src\\main\\java\\com\\energiaclara\\energyops\\domain\\event\\DomainEvent.java",
+              "ToolTip": "C:\\Users\\Lenovo\\OneDrive - Fundaci\u00F3n Estudiantes UPSA\\Programacion web\\CarpetadepruebaEnergiaClaraIA\\EnergiaClara-IA-main\\backend\\src\\main\\java\\com\\energiaclara\\energyops\\domain\\event\\DomainEvent.java",
+              "RelativeToolTip": "backend\\src\\main\\java\\com\\energiaclara\\energyops\\domain\\event\\DomainEvent.java",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2026-05-16T13:13:13.909Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "AnomalyStatus.java",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive - Fundaci\u00F3n Estudiantes UPSA\\Programacion web\\CarpetadepruebaEnergiaClaraIA\\EnergiaClara-IA-main\\backend\\src\\main\\java\\com\\energiaclara\\energyops\\domain\\model\\AnomalyStatus.java",
+              "RelativeDocumentMoniker": "backend\\src\\main\\java\\com\\energiaclara\\energyops\\domain\\model\\AnomalyStatus.java",
+              "ToolTip": "C:\\Users\\Lenovo\\OneDrive - Fundaci\u00F3n Estudiantes UPSA\\Programacion web\\CarpetadepruebaEnergiaClaraIA\\EnergiaClara-IA-main\\backend\\src\\main\\java\\com\\energiaclara\\energyops\\domain\\model\\AnomalyStatus.java",
+              "RelativeToolTip": "backend\\src\\main\\java\\com\\energiaclara\\energyops\\domain\\model\\AnomalyStatus.java",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2026-05-16T13:13:10.912Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "AnomalyId.java",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive - Fundaci\u00F3n Estudiantes UPSA\\Programacion web\\CarpetadepruebaEnergiaClaraIA\\EnergiaClara-IA-main\\backend\\src\\main\\java\\com\\energiaclara\\energyops\\domain\\model\\AnomalyId.java",
+              "RelativeDocumentMoniker": "backend\\src\\main\\java\\com\\energiaclara\\energyops\\domain\\model\\AnomalyId.java",
+              "ToolTip": "C:\\Users\\Lenovo\\OneDrive - Fundaci\u00F3n Estudiantes UPSA\\Programacion web\\CarpetadepruebaEnergiaClaraIA\\EnergiaClara-IA-main\\backend\\src\\main\\java\\com\\energiaclara\\energyops\\domain\\model\\AnomalyId.java",
+              "RelativeToolTip": "backend\\src\\main\\java\\com\\energiaclara\\energyops\\domain\\model\\AnomalyId.java",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2026-05-16T13:13:06.917Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Role.java",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive - Fundaci\u00F3n Estudiantes UPSA\\Programacion web\\CarpetadepruebaEnergiaClaraIA\\EnergiaClara-IA-main\\backend\\src\\main\\java\\com\\energiaclara\\domain\\model\\Role.java",
+              "RelativeDocumentMoniker": "backend\\src\\main\\java\\com\\energiaclara\\domain\\model\\Role.java",
+              "ToolTip": "C:\\Users\\Lenovo\\OneDrive - Fundaci\u00F3n Estudiantes UPSA\\Programacion web\\CarpetadepruebaEnergiaClaraIA\\EnergiaClara-IA-main\\backend\\src\\main\\java\\com\\energiaclara\\domain\\model\\Role.java",
+              "RelativeToolTip": "backend\\src\\main\\java\\com\\energiaclara\\domain\\model\\Role.java",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2026-05-16T13:08:24.49Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

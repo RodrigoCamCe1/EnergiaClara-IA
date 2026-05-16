@@ -1,0 +1,16 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\backend",
+    "\\database",
+    "\\frontend",
+    "\\frontend\\src",
+    "\\frontend\\src\\components",
+    "\\frontend\\src\\context",
+    "\\frontend\\src\\pages",
+    "\\frontend\\src\\services",
+    "\\frontend\\src\\styles"
+  ],
+  "SelectedNode": "\\database\\schema.sql",
+  "PreviewInSolutionExplorer": false
+}
