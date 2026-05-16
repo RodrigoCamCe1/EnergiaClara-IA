@@ -7,8 +7,6 @@ import com.energiaclara.energyops.domain.AnomalyType;
 import com.energiaclara.energyops.infrastructure.persistence.EnergyAnomalyEntity;
 import com.energiaclara.energyops.infrastructure.persistence.EnergyAnomalyRepository;
 import com.energiaclara.energyops.infrastructure.persistence.EnergyBaselineRepository;
-import com.energiaclara.energyops.infrastructure.persistence.EnergyKpiSnapshotEntity;
-import com.energiaclara.energyops.infrastructure.persistence.EnergyKpiSnapshotRepository;
 import com.energiaclara.energyops.infrastructure.persistence.EnergyReadingEntity;
 import com.energiaclara.energyops.infrastructure.persistence.EnergyReadingRepository;
 import org.slf4j.Logger;
@@ -19,6 +17,7 @@ import org.springframework.transaction.annotation.Transactional;
 
 import java.math.BigDecimal;
 import java.math.RoundingMode;
+import java.util.UUID;
 
 @Service
 public class EnergyAnalysisService {
@@ -28,7 +27,9 @@ public class EnergyAnalysisService {
     private final EnergyReadingRepository readingRepository;
     private final EnergyBaselineRepository baselineRepository;
     private final EnergyAnomalyRepository anomalyRepository;
-    private final EnergyKpiSnapshotRepository kpiSnapshotRepository;
+    private final UUID demoTenantId;
+    private final UUID demoMedidorId;
+    private final UUID demoUserId;
     private final BigDecimal demoDefaultBaselineKwh;
     private final BigDecimal demoDefaultTolerancePercent;
     private final BigDecimal costPerKwh;
@@ -38,7 +39,9 @@ public class EnergyAnalysisService {
             EnergyReadingRepository readingRepository,
             EnergyBaselineRepository baselineRepository,
             EnergyAnomalyRepository anomalyRepository,
-            EnergyKpiSnapshotRepository kpiSnapshotRepository,
+            @Value("${app.energyops.demo-tenant-id:11111111-1111-1111-1111-111111111111}") UUID demoTenantId,
+            @Value("${app.energyops.demo-medidor-id:33333333-3333-3333-3333-333333333333}") UUID demoMedidorId,
+            @Value("${app.energyops.demo-user-id:44444444-4444-4444-4444-444444444444}") UUID demoUserId,
             @Value("${app.energyops.demo-default-baseline-kwh:100}") BigDecimal demoDefaultBaselineKwh,
             @Value("${app.energyops.demo-default-tolerance-percent:15}") BigDecimal demoDefaultTolerancePercent,
             @Value("${app.energyops.cost-per-kwh:1.50625}") BigDecimal costPerKwh,
@@ -47,7 +50,9 @@ public class EnergyAnalysisService {
         this.readingRepository = readingRepository;
         this.baselineRepository = baselineRepository;
         this.anomalyRepository = anomalyRepository;
-        this.kpiSnapshotRepository = kpiSnapshotRepository;
+        this.demoTenantId = demoTenantId;
+        this.demoMedidorId = demoMedidorId;
+        this.demoUserId = demoUserId;
         this.demoDefaultBaselineKwh = demoDefaultBaselineKwh;
         this.demoDefaultTolerancePercent = demoDefaultTolerancePercent;
         this.costPerKwh = costPerKwh;
@@ -59,12 +64,16 @@ public class EnergyAnalysisService {
         log.info("Lectura energetica recibida facilityId={} meterId={} measuredAt={} kwh={}",
                 request.facilityId(), request.meterId(), request.measuredAt(), request.kwh());
 
-        EnergyBaseline baseline = resolveBaseline(request.facilityId(), request.meterId());
+        EnergyBaseline baseline = resolveBaseline();
 
         EnergyReadingEntity reading = new EnergyReadingEntity();
+        reading.setTenantId(demoTenantId);
+        reading.setMedidorId(demoMedidorId);
+        reading.setRegistradaPor(demoUserId);
         reading.setFacilityId(request.facilityId());
         reading.setMeterId(request.meterId());
         reading.setMeasuredAt(request.measuredAt());
+        reading.setPeriodoInicio(request.measuredAt());
         reading.setKwh(request.kwh());
         reading.setVoltage(request.voltage());
         reading.setPowerFactor(request.powerFactor());
@@ -92,11 +101,6 @@ public class EnergyAnalysisService {
                     reading.getId(), deviationPercent, baseline.tolerancePercent());
         }
 
-        EnergyKpiSnapshotEntity kpi = buildKpi(reading, baseline.expectedKwh(), deviationPercent,
-                anomalyDetected, estimatedCostImpact, estimatedCo2Impact);
-        kpiSnapshotRepository.save(kpi);
-        log.info("KPI generado readingId={} kpiId={} anomalyDetected={}", reading.getId(), kpi.getId(), anomalyDetected);
-
         return new AnalyzeReadingResponse(
                 reading.getId(),
                 anomaly == null ? null : anomaly.getId(),
@@ -109,16 +113,19 @@ public class EnergyAnalysisService {
         );
     }
 
-    private EnergyBaseline resolveBaseline(String facilityId, String meterId) {
-        return baselineRepository.findFirstByFacilityIdAndMeterIdAndActiveTrue(facilityId, meterId)
+    private EnergyBaseline resolveBaseline() {
+        return baselineRepository.findFirstByMedidorIdAndActiveTrue(demoMedidorId)
                 .map(entity -> {
-                    log.info("Baseline encontrado facilityId={} meterId={} expectedKwh={} tolerancePercent={}",
-                            facilityId, meterId, entity.getExpectedKwh(), entity.getTolerancePercent());
-                    return new EnergyBaseline(entity.getExpectedKwh(), entity.getTolerancePercent());
+                    BigDecimal tolerance = entity.getTolerancePercent() != null
+                            ? entity.getTolerancePercent()
+                            : demoDefaultTolerancePercent;
+                    log.info("Baseline encontrado medidorId={} expectedKwh={} tolerancePercent={}",
+                            demoMedidorId, entity.getExpectedKwh(), tolerance);
+                    return new EnergyBaseline(entity.getExpectedKwh(), tolerance);
                 })
                 .orElseGet(() -> {
-                    log.warn("No existe baseline activo para facilityId={} meterId={}; usando fallback demo expectedKwh={} tolerancePercent={}",
-                            facilityId, meterId, demoDefaultBaselineKwh, demoDefaultTolerancePercent);
+                    log.warn("No existe baseline activo para medidorId={}; usando fallback demo expectedKwh={} tolerancePercent={}",
+                            demoMedidorId, demoDefaultBaselineKwh, demoDefaultTolerancePercent);
                     return new EnergyBaseline(demoDefaultBaselineKwh, demoDefaultTolerancePercent);
                 });
     }
@@ -154,40 +161,32 @@ public class EnergyAnalysisService {
             BigDecimal estimatedCo2Impact
     ) {
         EnergyAnomalyEntity anomaly = new EnergyAnomalyEntity();
+        anomaly.setTenantId(demoTenantId);
+        anomaly.setMedidorId(demoMedidorId);
         anomaly.setReadingId(reading.getId());
         anomaly.setFacilityId(reading.getFacilityId());
         anomaly.setMeterId(reading.getMeterId());
         anomaly.setMeasuredAt(reading.getMeasuredAt());
         anomaly.setType(AnomalyType.EXCESS_CONSUMPTION);
         anomaly.setSeverity(severity);
+        anomaly.setPuntajeScore(scoreFor(severity));
         anomaly.setDeviationPercent(percent(deviationPercent));
         anomaly.setExplanation("La lectura supera el baseline configurado para el medidor.");
         anomaly.setRecommendation(recommendation);
         anomaly.setEstimatedCostImpact(estimatedCostImpact);
         anomaly.setEstimatedCo2Impact(estimatedCo2Impact);
+        anomaly.setIaUtilizada(false);
+        anomaly.setEstado("ABIERTA");
         return anomaly;
     }
 
-    private EnergyKpiSnapshotEntity buildKpi(
-            EnergyReadingEntity reading,
-            BigDecimal baselineKwh,
-            BigDecimal deviationPercent,
-            boolean anomalyDetected,
-            BigDecimal estimatedCostImpact,
-            BigDecimal estimatedCo2Impact
-    ) {
-        EnergyKpiSnapshotEntity kpi = new EnergyKpiSnapshotEntity();
-        kpi.setReadingId(reading.getId());
-        kpi.setFacilityId(reading.getFacilityId());
-        kpi.setMeterId(reading.getMeterId());
-        kpi.setMeasuredAt(reading.getMeasuredAt());
-        kpi.setKwh(reading.getKwh());
-        kpi.setBaselineKwh(baselineKwh);
-        kpi.setDeviationPercent(percent(deviationPercent));
-        kpi.setAnomalyDetected(anomalyDetected);
-        kpi.setEstimatedCostImpact(estimatedCostImpact);
-        kpi.setEstimatedCo2Impact(estimatedCo2Impact);
-        return kpi;
+    private BigDecimal scoreFor(AnomalySeverity severity) {
+        return switch (severity) {
+            case CRITICAL -> new BigDecimal("0.9500");
+            case HIGH -> new BigDecimal("0.7500");
+            case MEDIUM -> new BigDecimal("0.5000");
+            case LOW -> new BigDecimal("0.2500");
+        };
     }
 
     private BigDecimal percent(BigDecimal value) {

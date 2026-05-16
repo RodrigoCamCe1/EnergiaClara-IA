@@ -6,5 +6,5 @@ import java.util.Optional;
 import java.util.UUID;
 
 public interface EnergyBaselineRepository extends JpaRepository<EnergyBaselineEntity, UUID> {
-    Optional<EnergyBaselineEntity> findFirstByFacilityIdAndMeterIdAndActiveTrue(String facilityId, String meterId);
+    Optional<EnergyBaselineEntity> findFirstByMedidorIdAndActiveTrue(UUID medidorId);
 }

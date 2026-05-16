@@ -16,6 +16,14 @@ app:
   jwt:
     secret: ${JWT_SECRET:energiaclara-super-secret-key-32-chars-minimum!!}
     expiration-ms: 86400000
+  energyops:
+    demo-tenant-id: ${DEMO_TENANT_ID:11111111-1111-1111-1111-111111111111}
+    demo-medidor-id: ${DEMO_MEDIDOR_ID:33333333-3333-3333-3333-333333333333}
+    demo-user-id: ${DEMO_USER_ID:44444444-4444-4444-4444-444444444444}
+    demo-default-baseline-kwh: 100
+    demo-default-tolerance-percent: 15
+    cost-per-kwh: 1.50625
+    co2-kg-per-kwh: 0.44
 
 server:
   port: 8080

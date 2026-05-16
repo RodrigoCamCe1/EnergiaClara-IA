@@ -12,66 +12,94 @@ import jakarta.persistence.Table;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+import org.hibernate.annotations.Generated;
+import org.hibernate.generator.EventType;
 
 import java.math.BigDecimal;
 import java.time.Instant;
 import java.util.UUID;
 
 @Entity
-@Table(name = "energy_anomalies")
+@Table(name = "anomalia", schema = "energiaops")
 @Getter
 @Setter
 @NoArgsConstructor
 public class EnergyAnomalyEntity {
 
     @Id
+    @Column(name = "anomalia_id", columnDefinition = "uniqueidentifier")
     private UUID id;
 
-    @Column(name = "reading_id", nullable = false)
+    @Column(name = "inquilino_id", nullable = false, columnDefinition = "uniqueidentifier")
+    private UUID tenantId;
+
+    @Column(name = "medidor_id", nullable = false, columnDefinition = "uniqueidentifier")
+    private UUID medidorId;
+
+    @Column(name = "lectura_id", columnDefinition = "uniqueidentifier")
     private UUID readingId;
 
-    @Column(name = "facility_id", nullable = false, length = 80)
-    private String facilityId;
-
-    @Column(name = "meter_id", nullable = false, length = 80)
-    private String meterId;
-
-    @Column(name = "measured_at", nullable = false)
-    private Instant measuredAt;
-
     @Enumerated(EnumType.STRING)
-    @Column(nullable = false, length = 40)
+    @Column(name = "tipo_anomalia", nullable = false, length = 30)
     private AnomalyType type;
 
     @Enumerated(EnumType.STRING)
-    @Column(nullable = false, length = 20)
+    @Column(name = "severidad", nullable = false, length = 10)
     private AnomalySeverity severity;
 
-    @Column(name = "deviation_percent", nullable = false, precision = 9, scale = 3)
+    @Column(name = "puntaje_score", nullable = false, precision = 5, scale = 4)
+    private BigDecimal puntajeScore;
+
+    @Column(name = "porcentaje_desviacion", precision = 10, scale = 4)
     private BigDecimal deviationPercent;
 
-    @Column(nullable = false, length = 700)
+    @Column(name = "explicacion", nullable = false, columnDefinition = "nvarchar(max)")
     private String explanation;
 
-    @Column(nullable = false, length = 700)
+    @Column(name = "ia_utilizada", nullable = false)
+    private boolean iaUtilizada;
+
+    @Column(name = "version_modelo_ia", length = 50)
+    private String versionModeloIa;
+
+    @Column(name = "estado", nullable = false, length = 20)
+    private String estado;
+
+    @Column(name = "detectada_el", nullable = false)
+    private Instant measuredAt;
+
+    @Column(name = "facility_label", length = 80)
+    private String facilityId;
+
+    @Column(name = "meter_label", length = 80)
+    private String meterId;
+
+    @Column(name = "recomendacion", length = 700)
     private String recommendation;
 
-    @Column(name = "estimated_cost_impact", nullable = false, precision = 12, scale = 2)
+    @Column(name = "costo_estimado", precision = 12, scale = 2)
     private BigDecimal estimatedCostImpact;
 
-    @Column(name = "estimated_co2_impact", nullable = false, precision = 12, scale = 2)
+    @Column(name = "co2_estimado", precision = 12, scale = 2)
     private BigDecimal estimatedCo2Impact;
 
-    @Column(name = "created_at", nullable = false, updatable = false)
-    private Instant createdAt;
+    @Generated(event = { EventType.INSERT, EventType.UPDATE })
+    @Column(name = "version_fila", insertable = false, updatable = false)
+    private byte[] versionFila;
 
     @PrePersist
     void prePersist() {
         if (id == null) {
             id = UUID.randomUUID();
         }
-        if (createdAt == null) {
-            createdAt = Instant.now();
+        if (measuredAt == null) {
+            measuredAt = Instant.now();
+        }
+        if (estado == null) {
+            estado = "ABIERTA";
+        }
+        if (puntajeScore == null) {
+            puntajeScore = BigDecimal.ZERO;
         }
     }
 }

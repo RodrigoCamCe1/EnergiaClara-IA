@@ -1,5 +1,6 @@
 package com.energiaclara.api.rest;
 
+import com.energiaclara.api.rest.audit.Audited;
 import com.energiaclara.api.rest.dto.LoginRequest;
 import com.energiaclara.api.rest.dto.LoginResponse;
 import com.energiaclara.api.rest.dto.RegisterRequest;
@@ -33,6 +34,7 @@ public class AuthController {
     }
 
     @PostMapping("/login")
+    @Audited(action = "LOGIN", entity = "User")
     public ResponseEntity<LoginResponse> login(@Valid @RequestBody LoginRequest request) {
         LoginCommand command = new LoginCommand(
                 Email.of(request.email()),
@@ -47,6 +49,7 @@ public class AuthController {
 
     @PostMapping("/register")
     @PreAuthorize("hasRole('ADMIN_INSTITUCION')")
+    @Audited(action = "REGISTER_USER", entity = "User", entityIdExpression = "#result.body['userId']")
     public ResponseEntity<Map<String, String>> register(
             @Valid @RequestBody RegisterRequest request,
             @AuthenticationPrincipal AuthenticatedUser current) {

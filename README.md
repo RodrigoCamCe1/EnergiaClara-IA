@@ -36,43 +36,19 @@ El schema canónico es `database/script.sql` (mantenido por el DBA del equipo). 
 3. Abrir `database/script.sql` (encoding UTF-16 LE — SSMS lo lee directo).
 4. Seleccionar la DB `EnergiaClaraDB` y ejecutar (F5).
 
-**Seeds mínimos requeridos antes de levantar el backend:**
+**Seeds mínimos + extensiones de columnas (energyops + audit):**
 
-```sql
-USE EnergiaClaraDB;
+Ejecutar `database/seeds.sql` después de `database/script.sql`. El script es idempotente
+(usa `IF NOT EXISTS` / `COL_LENGTH`) y crea:
 
--- 1. Catálogo de roles (el backend mapea estos nombres a su enum)
-INSERT INTO [iam].[rol] (rol_id, nombre, descripcion, nivel_alcance) VALUES
-  (NEWID(), 'ADMIN_INSTITUCION', 'Configurador global de la institución', 'INSTITUCION'),
-  (NEWID(), 'DIRECTOR',          'Supervisor de KPIs',                    'INSTITUCION'),
-  (NEWID(), 'DOCENTE',           'Gestor cultural / retos',               'EDIFICIO'),
-  (NEWID(), 'ESTUDIANTE',        'Participante operativo',                'EDIFICIO'),
-  (NEWID(), 'TECNICO',           'Ejecutor de mantenimiento',             'EDIFICIO'),
-  (NEWID(), 'AUDITOR',           'Validador de cumplimiento',             'INSTITUCION');
-
--- 2. Tenant demo
-DECLARE @tenantId UNIQUEIDENTIFIER = '11111111-1111-1111-1111-111111111111';
-INSERT INTO [core].[inquilino]
-  (inquilino_id, nombre, nombre_legal, nit_rut, tipo_plan, factor_co2, codigo_moneda, esta_activo, creado_en, actualizado_en)
-VALUES
-  (@tenantId, 'Instituto Tecnológico Demo', 'Instituto Tecnológico Demo SA', '0000000000', 'FREEMIUM',
-   0.250000, 'BOB', 1, SYSUTCDATETIME(), SYSUTCDATETIME());
-
--- 3. Admin demo (password: Admin1234!)
-DECLARE @adminId UNIQUEIDENTIFIER = NEWID();
-INSERT INTO [iam].[usuario]
-  (usuario_id, inquilino_id, correo, nombre_completo, contrasena_hash, esta_activo, creado_en, actualizado_en)
-VALUES
-  (@adminId, @tenantId, 'admin@demo.edu', 'Administrador Demo',
-   '$2a$10$kdFT40lwlms9N5VJiQ7ES.4a2it/uhBEGlZco19apZw3Y/3CIgmQW',
-   1, SYSUTCDATETIME(), SYSUTCDATETIME());
-
--- 4. Asignar rol ADMIN_INSTITUCION al admin
-INSERT INTO [iam].[usuario_rol]
-  (usuario_rol_id, usuario_id, rol_id, inquilino_id, edificio_id, asignado_el, asignado_por)
-SELECT NEWID(), @adminId, rol_id, @tenantId, NULL, SYSUTCDATETIME(), @adminId
-FROM [iam].[rol] WHERE nombre = 'ADMIN_INSTITUCION';
-```
+- Catálogo de roles (`iam.rol`)
+- Tenant demo `11111111-...` (`core.inquilino`)
+- Admin demo `admin@demo.edu` / `Admin1234!` con UUID fijo `44444444-...`
+- Edificio demo `22222222-...` (`core.edificio`)
+- Medidor demo `33333333-...` (`core.medidor`) — referenciado por `app.energyops.demo-medidor-id`
+- Línea base demo activa (`energiaops.snapshot_linea_base`)
+- `ALTER TABLE` añadiendo columnas auxiliares a `[consumo].[lectura]`, `[energiaops].[anomalia]`,
+  `[energiaops].[snapshot_linea_base]` y `[audit].[evento_auditoria]` que el backend usa.
 
 > Para regenerar el hash de la contraseña: [bcrypt-generator.com](https://bcrypt-generator.com), rounds = 10.
 
@@ -150,8 +126,12 @@ EnergiaClara-IA/
 
 | Método | Ruta | Acceso | Descripción |
 |---|---|---|---|
-| POST | `/api/auth/login` | Público | Retorna JWT |
-| POST | `/api/auth/register` | ADMIN_INSTITUCION | Crea usuario en el tenant |
+| POST | `/api/auth/login` | Público | Retorna JWT (auditado en `[audit].[evento_auditoria]`) |
+| POST | `/api/auth/register` | ADMIN_INSTITUCION | Crea usuario en el tenant (auditado) |
+| POST | `/api/energyops/analyze-reading` | Autenticado | Persiste lectura en `[consumo].[lectura]`, detecta anomalía → `[energiaops].[anomalia]` |
+| GET  | `/api/analytics/dashboard` | Autenticado | KPIs derivados de lecturas + anomalías + baseline activa |
+| GET  | `/api/analytics/kpis` | Autenticado | KPIs por lectura (cálculo on-the-fly) |
+| GET  | `/api/analytics/anomalies` | Autenticado | Anomalías recientes (`[energiaops].[anomalia]`) |
 
 ### Ejemplo login
 
