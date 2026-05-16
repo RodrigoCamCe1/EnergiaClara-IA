@@ -54,8 +54,14 @@ public class AuthApplicationService implements LoginUseCase, RegisterUserUseCase
         }
 
         String hashed = passwordEncoder.encode(command.rawPassword());
-        User user = User.create(command.tenantId(), command.email(), hashed, command.roles());
-        userRepository.save(user);
+        User user = User.create(
+                command.tenantId(),
+                command.email(),
+                command.fullName(),
+                hashed,
+                command.roles()
+        );
+        userRepository.save(user, command.assignedBy());
         return user.getId();
     }
 }

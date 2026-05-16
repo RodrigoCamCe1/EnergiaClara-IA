@@ -11,9 +11,11 @@ import com.energiaclara.application.port.in.RegisterUserUseCase;
 import com.energiaclara.domain.model.vo.Email;
 import com.energiaclara.domain.model.vo.TenantId;
 import com.energiaclara.domain.model.vo.UserId;
+import com.energiaclara.infrastructure.security.AuthenticatedUser;
 import jakarta.validation.Valid;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.access.prepost.PreAuthorize;
+import org.springframework.security.core.annotation.AuthenticationPrincipal;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.Map;
@@ -45,12 +47,16 @@ public class AuthController {
 
     @PostMapping("/register")
     @PreAuthorize("hasRole('ADMIN_INSTITUCION')")
-    public ResponseEntity<Map<String, String>> register(@Valid @RequestBody RegisterRequest request) {
+    public ResponseEntity<Map<String, String>> register(
+            @Valid @RequestBody RegisterRequest request,
+            @AuthenticationPrincipal AuthenticatedUser current) {
         RegisterUserCommand command = new RegisterUserCommand(
                 TenantId.of(request.tenantId()),
                 Email.of(request.email()),
+                request.fullName(),
                 request.password(),
-                request.roles()
+                request.roles(),
+                UserId.of(current.userId())
         );
         UserId userId = registerUserUseCase.register(command);
         return ResponseEntity.ok(Map.of("userId", userId.toString()));
